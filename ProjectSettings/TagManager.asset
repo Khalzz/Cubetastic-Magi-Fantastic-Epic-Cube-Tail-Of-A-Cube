@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Floor
+  - Death
+  - PostProcessing
+  - Win
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 327564307
+    locked: 0
+  - name: floor into the lava
+    uniqueID: 1732107479
+    locked: 0
+  - name: Lava
+    uniqueID: 2356268677
+    locked: 0
+  - name: Floor over lava
+    uniqueID: 439033667
+    locked: 0
+  - name: over floor
+    uniqueID: 1164231343
+    locked: 0
+  - name: Player
+    uniqueID: 3901447017
+    locked: 0
+  - name: over yeh
+    uniqueID: 2896785021
+    locked: 0
