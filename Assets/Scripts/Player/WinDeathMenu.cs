@@ -13,6 +13,13 @@ public class WinDeathMenu : MonoBehaviour
     public LayerMask whatIsDeath;
     public float footDeathRadio;
 
+    // uh oh
+    public AudioSource sound1;
+    public AudioSource sound2;
+    public bool sound = false;
+    public bool winSound = false;
+    public bool started = false;
+
     //win
     public LayerMask whatIsWin;
     public static bool youWin; 
@@ -22,6 +29,15 @@ public class WinDeathMenu : MonoBehaviour
     public GameObject DeadMenuUi;
     public GameObject timer;
     public TextMeshProUGUI endTime;
+
+    void Start() 
+    {
+        if (MainMenu.sss == true)
+        {
+            sound1.Play();
+            sound2.Play();
+        }
+    }
 
     void Update()
     {
@@ -38,7 +54,7 @@ public class WinDeathMenu : MonoBehaviour
             timer.SetActive(false);
             Death();
         }
-        else if(Timer.actualTime == 15)
+        else if(Timer.fixedActualTimer == 0)
         {
             timer.SetActive(false);
             Death();
@@ -57,6 +73,14 @@ public class WinDeathMenu : MonoBehaviour
 
     public void Win()
     {
+        if (MainMenu.sss == true)
+            {
+                if (!winSound)
+                {
+                    CallFart();
+                    winSound = true;
+                }
+            }
         WinMenuUi.SetActive(true);
         endTime.text = ("your time was " + Timer.actualTime.ToString("F2") + " seconds");
         Time.timeScale = 0f; //time stops
@@ -64,6 +88,14 @@ public class WinDeathMenu : MonoBehaviour
     
     public void Death()
     {
+        if (MainMenu.sss == true)
+            {
+                if (!sound)
+                {
+                    CallFart();
+                    sound = true;
+                }
+            }
         DeadMenuUi.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -94,5 +126,23 @@ public class WinDeathMenu : MonoBehaviour
     {
         SceneManager.LoadScene(LevelMenu.level);
         Time.timeScale = 1f;
+    }
+
+    public void CallFart()
+    {
+        Debug.Log("ha funcionao wiiiiiiiiiii");
+        int value = Random.Range(1,3);
+        if (value == 1)
+        {
+            sound1.Play();
+        }
+        else if (value == 2)
+        {
+            sound2.Play();
+        }
+        else
+        {
+            Debug.Log("an exeption has been found");
+        }
     }
 }
