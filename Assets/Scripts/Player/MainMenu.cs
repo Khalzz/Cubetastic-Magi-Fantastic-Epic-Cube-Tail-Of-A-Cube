@@ -10,7 +10,21 @@ public class MainMenu : MonoBehaviour
 
     void Update() 
     {
-        Confirm();    
+        Confirm(); 
+    }
+
+    public void ActDe()
+    {
+        if (sss)
+        {
+            sss = false;
+            Debug.Log(sss);
+        }
+        else 
+        {
+            sss = true;
+            Debug.Log(sss);
+        }
     }
 
     public void Activate()
