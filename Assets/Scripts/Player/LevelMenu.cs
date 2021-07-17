@@ -8,6 +8,13 @@ public class LevelMenu : MonoBehaviour
 {
     public static string level;
 
+    public static void LevelTutorial()
+    {
+        level = ("Level Tutorial");
+        Debug.Log(level);
+        SceneManager.LoadScene(level);
+    }
+
     public static void Level1()
     {
         level = ("Level 1");

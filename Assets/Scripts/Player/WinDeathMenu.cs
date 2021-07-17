@@ -54,7 +54,7 @@ public class WinDeathMenu : MonoBehaviour
             timer.SetActive(false);
             Death();
         }
-        else if(Timer.fixedActualTimer == 0)
+        else if(Timer.fixedActualTimer == 0 && LevelMenu.level != "Level Tutorial")
         {
             timer.SetActive(false);
             Death();
@@ -103,8 +103,11 @@ public class WinDeathMenu : MonoBehaviour
     public void next()
     {
         Time.timeScale = 1f;
-
-        if(LevelMenu.level == "Level 1")
+        if(LevelMenu.level == "Level Tutorial")
+        {
+            LevelMenu.Level1();
+        }
+        else if(LevelMenu.level == "Level 1")
         {
             LevelMenu.Level2();
         }

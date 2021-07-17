@@ -1563,6 +1563,8 @@ MonoBehaviour:
   velocity: 25
   jumpForce: 27
   itsInTheFloor: 0
+  vCam: {fileID: 1821384853}
+  cameraMode: 0
   deathPosition: {fileID: 471581708}
   itsDead: 0
   whatIsDeath:
@@ -3520,7 +3522,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6893,7 +6895,7 @@ MonoBehaviour:
   m_Follow: {fileID: 242026485}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 10
+    OrthographicSize: 15
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
