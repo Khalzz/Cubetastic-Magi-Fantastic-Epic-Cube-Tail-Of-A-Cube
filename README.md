@@ -8,7 +8,7 @@ By Rodrigo Seguel
 
 ## What's the current state of the game?
 
-Well, it works... sometimes... i guess? "**i only tested it in ubuntu 20.04**".
+Well, it works... sometimes... i guess?
 
 ## How do i get "this" running in my computer?
 
