@@ -1438,7 +1438,8 @@ MonoBehaviour:
   jumpForce: 27
   itsInTheFloor: 0
   vCam: {fileID: 634397097}
-  cameraMode: 0
+  camSize: 10
+  fov: 10
   deathPosition: {fileID: 1838943669}
   itsDead: 0
   whatIsDeath:
@@ -1597,8 +1598,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382421102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -33.4271, y: 4.92, z: 10}
-  m_LocalScale: {x: 31.5275, y: 43.46129, z: 1}
+  m_LocalPosition: {x: -40.4022, y: 4.92, z: 10}
+  m_LocalScale: {x: 45.47842, y: 43.46129, z: 1}
   m_Children: []
   m_Father: {fileID: 263380383}
   m_RootOrder: 5
@@ -2330,8 +2331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 660317532}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.2167, y: -19.1025, z: 10}
-  m_LocalScale: {x: 52.262367, y: 27.31652, z: 1}
+  m_LocalPosition: {x: -28.8893, y: -19.1025, z: 10}
+  m_LocalScale: {x: 67.6066, y: 27.31652, z: 1}
   m_Children: []
   m_Father: {fileID: 263380383}
   m_RootOrder: 8
