@@ -10,6 +10,11 @@ public class MainMenu : MonoBehaviour
     public GameObject deactivate;
     public static int fovReal = 10;
 
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     void Update() 
     {
         Confirm(); 
